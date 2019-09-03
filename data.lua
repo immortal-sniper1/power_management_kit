@@ -724,3 +724,129 @@ for i=1, 5 do
 )
 
 end
+
+
+
+
+
+
+
+data:extend(
+{
+{
+    type = "accumulator",
+    name = "transfer-acumulator",
+    icon = "__power_management_kit__/graphics/icons/transfer-acumulator.png",
+    icon_size = 32,
+    flags = {"placeable-neutral", "player-creation"},
+    minable = {mining_time = 0.3, result = "transfer-acumulator"},
+    max_health = 150,
+    corpse = "accumulator-remnants",
+    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+    selection_box = {{-1, -1}, {1, 1}},
+    drawing_box = {{-1, -1.5}, {1, 1}},
+    energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "1MJ",
+      usage_priority = "tertiary",
+      input_flow_limit = "3gW",
+      output_flow_limit = "3gW"
+    },
+    picture = accumulator_picture(),
+    charge_animation = accumulator_charge(),
+
+    charge_cooldown = 30,
+    charge_light = {intensity = 0.3, size = 7, color = {r = 51/255, g = 204/255, b = 51/255}},
+    discharge_animation = accumulator_discharge(),
+    discharge_cooldown = 60,
+    discharge_light = {intensity = 0.7, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound =
+      {
+        filename = "__base__/sound/accumulator-working.ogg",
+        volume = 1
+      },
+      idle_sound =
+      {
+        filename = "__base__/sound/accumulator-idle.ogg",
+        volume = 0.4
+      },
+      max_sounds_per_type = 5
+    },
+
+    circuit_wire_connection_point = circuit_connector_definitions["accumulator"].points,
+    circuit_connector_sprites = circuit_connector_definitions["accumulator"].sprites,
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+
+    default_output_signal = {type = "virtual", name = "signal-F"}
+  },
+
+
+
+
+	{
+    type = "item",
+    name = "transfer-acumulator",
+    icon = "__power_management_kit__/graphics/entity/icons/transfer-acumulator.png",
+    icon_size = 32,
+
+    subgroup = "energy",
+    order = "e[accumulator]-a[accumulator]",
+    place_result = "transfer-acumulator",
+    stack_size = 50
+    },
+
+
+
+
+
+    {
+    type = "recipe",
+    name = "transfer-acumulator",
+    energy_required = 10,
+    enabled = false,
+    ingredients =
+    {
+        {"accumulator", 1},
+        {"iron-plate", 5},
+        {"processing-unit", 2},
+        {"battery", 5}
+    },
+    result = "transfer-acumulator"
+    },
+
+
+
+
+
+    {
+    type = "technology",
+    name = "electric-energy-transfer-acumulator-1",
+    icon_size = 128,
+    icon = "__power_management_kit__/graphics/technology/transfer-acumulator-tech.png",
+    localised_name = {"technology-name.electric-energy-transfer-acumulator"},
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "transfer-acumulator"
+      }
+    },
+    prerequisites = {"electric-energy-accumulators"},
+    unit =
+    {
+      count = 90,
+      ingredients =
+      {
+        {"automation-science-pack", 3},
+        {"logistic-science-pack", 2},
+        {"chemical-science-pack", 2}
+      },
+      time = 30
+    },
+    order = "c-e-a"
+    }
+})
