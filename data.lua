@@ -757,10 +757,10 @@ data:extend(
     charge_animation = accumulator_charge(),
 
     charge_cooldown = 30,
-    charge_light = {intensity = 0.3, size = 7, color = {r = 51/255, g = 204/255, b = 51/255}},
+    charge_light = {intensity = 0.3, size = 7, color = {r = 51, g = 204, b = 51}},
     discharge_animation = accumulator_discharge(),
     discharge_cooldown = 60,
-    discharge_light = {intensity = 0.7, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
+    discharge_light = {intensity = 0.7, size = 7, color = {r = 255, g = 110, b = 0}},
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
