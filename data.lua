@@ -501,335 +501,220 @@ end
 
 
 
-
+data:extend(
 {
-    type = "electric-pole",
-    name = "trafo-connection_src_0",
-    icon = "__base__/graphics/icons/substation.png",
-    flags = {"placeable-neutral", "player-creation","not-deconstructable","not-blueprintable"},
-    max_health = 100,
-    corpse = "medium-remnants",
-    resistances = resistances_immune,
-	collision_mask = {"ghost-layer"},
-    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -1.5}, {1, 1}},
-    maximum_wire_distance = 5,
-    supply_area_distance = 1,
-	icon_size = 32,
-	order = "z",
-    pictures = con_pictures,
-    connection_points =
-    {
-      {
-        shadow =
-        {
-          copper = {2.5, -0.4},
-          green = {2.5, -0.4},
-          red = {2.5, -0.4}
-        },
-        wire =
-        {
-          copper = {0.0, -3},
-          green = {0.0,-3},
-          red = {0.0,-3}
-        }
-      },
-    },
-    copper_wire_picture = con_copper_wire_picture,
-    green_wire_picture = con_green_wire_picture,
-    radius_visualisation_picture = con_radius_visualisation_picture,
-    red_wire_picture = con_red_wire_picture,
-    wire_shadow_picture = con_wire_shadow_picture
-  },
-  {
-    type = "electric-pole",
-    name = "trafo-connection_src_2",
-    icon = "__base__/graphics/icons/substation.png",
-    flags = {"placeable-neutral", "player-creation","not-deconstructable","not-blueprintable"},
-    max_health = 100,
-    corpse = "medium-remnants",
-    resistances = resistances_immune,
-	collision_mask = {"ghost-layer"},
-    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -1.5}, {1, 1}},
-    maximum_wire_distance = 5,
-    supply_area_distance = 1,
-	order = "z",
-	icon_size = 32,
-    pictures = con_pictures,
-    connection_points =
-    {
-      {
-        shadow =
-        {
-          copper = {1.3, 0.2},
-          green = {1.3, 0.2},
-          red = {1.3, 0.2}
-        },
-        wire =
-        {
-          copper = {0.6, -1.8},
-          green = {0.6, -1.8},
-          red = {0.6, -1.8}
-        }
-      },
-    },
-    copper_wire_picture = con_copper_wire_picture,
-    green_wire_picture = con_green_wire_picture,
-    radius_visualisation_picture = con_radius_visualisation_picture,
-    red_wire_picture = con_red_wire_picture,
-    wire_shadow_picture = con_wire_shadow_picture
-  },
-  {
-    type = "electric-pole",
-    name = "trafo-connection_src_4",
-    icon = "__base__/graphics/icons/substation.png",
-    flags = {"placeable-neutral", "player-creation","not-deconstructable","not-blueprintable"},
-    max_health = 100,
-    corpse = "medium-remnants",
-    resistances = resistances_immune,
-	collision_mask = {"ghost-layer"},
-    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -1.5}, {1, 1}},
-    maximum_wire_distance = 5,
-    supply_area_distance = 1,
-	order = "z",
-	icon_size = 32,
-    pictures = con_pictures,
-    connection_points =
-    {
-      {
-        shadow =
-        {
-          copper = {2.5, 1.75},
-          green = {2.5, 1.75},
-          red = {2.5, 1.75}
-        },
-        wire =
-        {
-          copper = {0.0, -0.2},
-          green = {0.0, -0.2},
-          red = {0.0, -0.2}
-        }
-      },
-    },
-    copper_wire_picture = con_copper_wire_picture,
-    green_wire_picture = con_green_wire_picture,
-    radius_visualisation_picture = con_radius_visualisation_picture,
-    red_wire_picture = con_red_wire_picture,
-    wire_shadow_picture = con_wire_shadow_picture
-  },
-  {
-    type = "electric-pole",
-    name = "trafo-connection_src_6",
-    icon = "__base__/graphics/icons/substation.png",
-    flags = {"placeable-neutral", "player-creation","not-deconstructable","not-blueprintable"},
-    max_health = 100,
-    corpse = "medium-remnants",
-    resistances = resistances_immune,
-	collision_mask = {"ghost-layer"},
-    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -1.5}, {1, 1}},
-    maximum_wire_distance = 5,
-    supply_area_distance = 1,
-	order = "z",
-	icon_size = 32,
-    pictures = con_pictures,
-    connection_points =
-    {
-      {
-        shadow =
-        {
-          copper = {2.0, 0.6},
-          green = {2.0, 0.6},
-          red = {2.0, 0.6}
-        },
-        wire =
-        {
-          copper = {-0.75, -1.75},
-          green = {-0.75, -1.75},
-          red = {-0.75, -1.75}
-        }
-      },
-    },
-    copper_wire_picture = con_copper_wire_picture,
-    green_wire_picture = con_green_wire_picture,
-    radius_visualisation_picture = con_radius_visualisation_picture,
-    red_wire_picture = con_red_wire_picture,
-    wire_shadow_picture = con_wire_shadow_picture
-  },
-  {
-    type = "electric-pole",
-    name = "trafo-connection_tar_0",
-    icon = "__base__/graphics/icons/substation.png",
-    flags = {"placeable-neutral", "player-creation","not-deconstructable","not-blueprintable"},
-    max_health = 100,
-    corpse = "medium-remnants",
-    resistances = resistances_immune,
-	collision_mask = {"ghost-layer"},
-    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -1.5}, {1, 1}},
-    maximum_wire_distance = 5,
-    supply_area_distance = 1,
-	order = "z",
-	icon_size = 32,
-    pictures = con_pictures,
-    connection_points =
-    {
-      {
-        shadow =
-        {
-          copper = {3.0, 1.5},
-          green = {3.0, 1.5},
-          red = {3.0, 1.5}
-        },
-        wire =
-        {
-          copper = {0.0, -0.75},
-          green = {0.0, -0.75},
-          red = {0.0, -0.75}
-        }
-      },
-    },
-    copper_wire_picture = con_copper_wire_picture,
-    green_wire_picture = con_green_wire_picture,
-    radius_visualisation_picture = con_radius_visualisation_picture,
-    red_wire_picture = con_red_wire_picture,
-    wire_shadow_picture = con_wire_shadow_picture
-  },
-  {
-    type = "electric-pole",
-    name = "trafo-connection_tar_2",
-    icon = "__base__/graphics/icons/substation.png",
-    flags = {"placeable-neutral", "player-creation","not-deconstructable","not-blueprintable"},
-    max_health = 100,
-    corpse = "medium-remnants",
-    resistances = resistances_immune,
-	collision_mask = {"ghost-layer"},
-    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -1.5}, {1, 1}},
-    maximum_wire_distance = 5,
-    supply_area_distance = 1,
-	order = "z",
-	icon_size = 32,
-    pictures = con_pictures,
-    connection_points =
-    {
-      {
-        shadow =
-        {
-          copper = {2.8, 0.5},
-          green = {2.8, 0.5},
-          red = {2.8, 0.5}
-        },
-        wire =
-        {
-          copper = {-0.8, -2.1},
-          green = {-0.8, -2.1},
-          red = {-0.8, -2.1}
-        }
-      },
-    },
-    copper_wire_picture = con_copper_wire_picture,
-    green_wire_picture = con_green_wire_picture,
-    radius_visualisation_picture = con_radius_visualisation_picture,
-    red_wire_picture = con_red_wire_picture,
-    wire_shadow_picture = con_wire_shadow_picture
-  },
-  {
-    type = "electric-pole",
-    name = "trafo-connection_tar_4",
-    icon = "__base__/graphics/icons/substation.png",
-    flags = {"placeable-neutral", "player-creation","not-deconstructable","not-blueprintable"},
-    max_health = 100,
-    corpse = "medium-remnants",
-    resistances = resistances_immune,
-	collision_mask = {"ghost-layer"},
-    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -1.5}, {1, 1}},
-    maximum_wire_distance = 5,
-    supply_area_distance = 1,
-	order = "z",
-	icon_size = 32,
-    pictures = con_pictures,
-    connection_points =
-    {
-      {
-        shadow =
-        {
-          copper = {3.0, -0.2},
-          green = {3.0, -0.2},
-          red = {3.0, -0.2}
-        },
-        wire =
-        {
-          copper = {0.0, -3.0},
-          green = {0.0, -3.0},
-          red = {0.0, -3.0}
-        }
-      },
-    },
-    copper_wire_picture = con_copper_wire_picture,
-    green_wire_picture = con_green_wire_picture,
-    radius_visualisation_picture = con_radius_visualisation_picture,
-    red_wire_picture = con_red_wire_picture,
-    wire_shadow_picture = con_wire_shadow_picture
-  },
-  {
-    type = "electric-pole",
-    name = "trafo-connection_tar_6",
-    icon = "__base__/graphics/icons/substation.png",
-    flags = {"placeable-neutral", "player-creation","not-deconstructable","not-blueprintable"},
-    max_health = 100,
-    corpse = "medium-remnants",
-    resistances = resistances_immune,
-	collision_mask = {"ghost-layer"},
-    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -1.5}, {1, 1}},
-    maximum_wire_distance = 5,
-    supply_area_distance = 1,
-	order = "z",
-	icon_size = 32,
-    pictures = con_pictures,
-    connection_points =
-    {
-      {
-        shadow =
-        {
-          copper = {1.8, 0.2},
-          green = {1.8, 0.2},
-          red = {1.8, 0.2}
-        },
-        wire =
-        {
-          copper = {0.6, -2.0},
-          green = {0.6, -2.0},
-          red = {0.6, -2.0}
-        }
-      },
-    },
-    copper_wire_picture = con_copper_wire_picture,
-    green_wire_picture = con_green_wire_picture,
-    radius_visualisation_picture = con_radius_visualisation_picture,
-    red_wire_picture = con_red_wire_picture,
-    wire_shadow_picture = con_wire_shadow_picture
-  }
+	{
+		type = "fluid",
+		name = "traformator-water",
+		default_temperature = 15,
+		max_temperature = 100,
+		heat_capacity = 200.."J",
+		base_color = {r=0, g=0.34, b=0.6},
+		flow_color = {r=0.7, g=0.7, b=0.7},
+		icon = "__Transformers__/graphics/flash.png",
+		icon_size = 32,
+		order = "a[fluid]-a[water]",
+		pressure_to_speed_ratio = 0.4,
+		flow_to_energy_ratio = 0.59,
+		auto_barrel = false,
+		hidden=true
+	},
+	{
+		type = "fluid",
+		name = "traformator-steam",
+		default_temperature = 15,
+		max_temperature = 500,
+		heat_capacity = 200.."J",
+		icon = "__Transformers__/graphics/flash.png",
+		icon_size = 32,
+		base_color = {r=0.5, g=0.5, b=0.5},
+		flow_color = {r=1.0, g=1.0, b=1.0},
+		order = "a[fluid]-b[steam]",
+		pressure_to_speed_ratio = 0.4,
+		flow_to_energy_ratio = 0.59,
+		gas_temperature = 15,
+		auto_barrel = false,
+		hidden=true
+	},
+	{
+		type = "boiler",
+		name = "traformator-source",
+		icon = "__Transformers__/graphics/icons/trafoicon.png",
+		icon_size = 32,
+		order = "z",
+		flags = {"placeable-neutral", "player-creation","not-on-map","not-deconstructable","not-blueprintable", trafos_hide_overlay},
+		selectable_in_game=false,
+		max_health = 200,
+		corpse = "medium-remnants",
+		collision_mask = {"ghost-layer"},
+		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		mode = "output-to-separate-pipe",
+		resistances =resistances_immune,
+		collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+		selection_box = {{-0.9, -0.9}, {0.9, 0.9}},
+		target_temperature = 100,
+		fluid_box =
+		{
+			production_type = "output",
+			pipe_picture = assembler2pipepictures(),
+			pipe_covers = trafopipecoverspictures(),
+			base_area = 10,
+			base_level = 1,
+			pipe_connections = {{ type="output", position = {0.5, 1.5} }},
+			secondary_draw_orders = { north = -1 },
+			off_when_no_fluid_recipe = true
+		},
+		output_fluid_box =
+		{
+			base_area = 1,
+			height = 2,
+			base_level = 1,
+			pipe_covers = pipecoverspictures(),
+			pipe_connections =
+			{
+				{type = "output", position = {-0.5, 1.5}}
+			},
+			production_type = "output",
+			filter = "traformator-steam"
+		},
+		energy_consumption = 100.."MW",
+		energy_source =
+		{
+			type = "electric",
+			input_priority = "secondary",
+			usage_priority = "secondary-input",
+			emissions = 0
+		},
+		structure = {
+		north =	{ layers = {transparent_pic} },
+		east = { layers = {transparent_pic} },
+		south = { layers = {transparent_pic} },
+		west = { layers = {transparent_pic} }, },
+	
+		fire_flicker_enabled = false,
+		fire ={},
+		fire_glow_flicker_enabled = false,
+		fire_glow ={},
+		burning_cooldown = 0.1
+	},
+
+
+
+
+
+
+
+
+
+for i=1, 5 do
+
+	{
+		type = "generator",
+		name = "traformator-target-"..i.."-sw", --powered from south or west
+		icon = "__Transformers__/graphics/icons/trafoicon.png",
+		icon_size = 32,
+		order = "z",
+		flags = {"placeable-neutral","player-creation","not-on-map","not-deconstructable","not-blueprintable", trafos_hide_overlay},
+		selectable_in_game=false,
+		max_health = 300,
+		corpse = "big-remnants",
+		collision_mask = {"ghost-layer"},
+		dying_explosion = "medium-explosion",
+		alert_icon_shift = util.by_pixel(0, -12),
+		effectivity = 0.96,
+		fluid_usage_per_tick = 10,
+		maximum_temperature = 100,
+		burns_fluid = false,
+		resistances = resistances_immune,
+		collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+		selection_box = {{-0.9, -0.9}, {0.9, 0.9}},
+		fluid_box =
+		{
+			base_area = 1,
+			height = 2,
+			base_level = -1,
+			pipe_covers = trafopipecoverspictures(),
+			pipe_connections =
+			{
+				--{ type = "input", position = {-0.5, 1.5} },
+				{ type = "input", position = {0.5, 1.5} },
+			},
+			production_type = "input-output",
+			filter = "trafo-steam-"..i,
+			minimum_temperature = 100.0
+		},
+		energy_source =
+		{
+			type = "electric",
+			usage_priority = "secondary-output"
+		},
+		horizontal_animation = { layers = {transparent_pic} },
+		vertical_animation = { layers = {transparent_pic} },
+		working_sound =
+		{
+			sound =
+			{
+				filename = "__Transformers__/sound/MainsBrum50Hz.ogg",
+				volume = 0.5
+			},
+			match_speed_to_activity = true
+		},
+		min_perceived_performance = 0.25,
+		performance_to_sound_speedup = 0.5
+	},
+	{
+		type = "generator",
+		name = "traformator-target-"..i.."-ne", --powered from north or east
+		icon = "__Transformers__/graphics/icons/trafoicon.png",
+		icon_size = 32,
+		order = "z",
+		flags = {"placeable-neutral","player-creation","not-on-map","not-deconstructable","not-blueprintable", trafos_hide_overlay},
+		selectable_in_game=false,
+		max_health = 300,
+		corpse = "big-remnants",
+		dying_explosion = "medium-explosion",
+		alert_icon_shift = util.by_pixel(0, -12),
+		effectivity = 0.96,
+		fluid_usage_per_tick = 10,
+		maximum_temperature = 100,
+		burns_fluid = false,
+		resistances = resistances_immune,
+		collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+		selection_box = {{-0.9, -0.9}, {0.9, 0.9}},
+		fluid_box =
+		{
+			base_area = 1,
+			height = 2,
+			base_level = -1,
+			pipe_covers = trafopipecoverspictures(),
+			pipe_connections =
+			{
+				{ type = "input", position = {-0.5, -1.5} },
+				--{ type = "input", position = {0.5, -1.5} },
+			},
+			production_type = "input-output",
+			filter = "traformator-steam",
+			minimum_temperature = 100.0
+		},
+		energy_source =
+		{
+			type = "electric",
+			usage_priority = "secondary-output"
+		},
+		horizontal_animation = { layers = {transparent_pic} },
+		vertical_animation = { layers = {transparent_pic} },
+		working_sound =
+		{
+			sound =
+			{
+				filename = "__Transformers__/sound/MainsBrum50Hz.ogg",
+				volume = 0.5
+			},
+			match_speed_to_activity = true
+		},
+		min_perceived_performance = 0.25,
+		performance_to_sound_speedup = 0.5
+	}
 }
 )
-
-
-
-
-
-
-
-
 
