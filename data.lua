@@ -1,4 +1,4 @@
--- transformer 
+-- transformer
 
 
 
@@ -291,7 +291,7 @@ for i=1, 5 do
 			{
 				pipe_connections ={},
 			},
-			energy_consumption=1000.."MW",
+			energy_consumption=1000,
 			burning_cooldown = 1,
 			target_temperature= 100,
 			energy_source =   {
@@ -382,7 +382,7 @@ for i=1, 5 do
 			{
 				pipe_connections ={},
 			},
-			energy_consumption=1000.."MW",
+			energy_consumption=1000,
 			burning_cooldown = 1,
 			target_temperature= 100,
 			energy_source =   {
@@ -440,7 +440,8 @@ end
 
 
 
-
+data:extend(
+{
 
 	{
 		type = "technology",
@@ -483,7 +484,7 @@ end
 		order = "c-e-c",
 		icon_size = 32,
 	},
-
+})
 
 
 
@@ -508,7 +509,7 @@ data:extend(
 		name = "traformator-water",
 		default_temperature = 15,
 		max_temperature = 100,
-		heat_capacity = 200.."J",
+		heat_capacity = 200,
 		base_color = {r=0, g=0.34, b=0.6},
 		flow_color = {r=0.7, g=0.7, b=0.7},
 		icon = "__power_management_kit__/graphics/flash.png",
@@ -524,7 +525,7 @@ data:extend(
 		name = "traformator-steam",
 		default_temperature = 15,
 		max_temperature = 500,
-		heat_capacity = 200.."J",
+		heat_capacity = 200,
 		icon = "__power_management_kit__/graphics/flash.png",
 		icon_size = 32,
 		base_color = {r=0.5, g=0.5, b=0.5},
@@ -577,7 +578,7 @@ data:extend(
 			production_type = "output",
 			filter = "traformator-steam"
 		},
-		energy_consumption = 100.."MW",
+		energy_consumption = 100,
 		energy_source =
 		{
 			type = "electric",
@@ -598,6 +599,8 @@ data:extend(
 		burning_cooldown = 0.1
 	},
 
+})
+
 
 
 
@@ -607,6 +610,8 @@ data:extend(
 
 
 for i=1, 5 do
+	data:extend(
+{
 
 	{
 		type = "generator",
@@ -718,3 +723,4 @@ for i=1, 5 do
 }
 )
 
+end
