@@ -1,0 +1,11 @@
+{
+  "name": "power_management_kit",
+  "version": "0.0.0",
+  "title": "power management kit",
+  "author": "immortal_sniper1",
+  "contact": "zerefulquirra@gmail.com",
+  "factorio_version": "0.17",
+  "dependencies": ["base >= 0.17"],
+  "homepage": "none",
+  "description": " "
+}
