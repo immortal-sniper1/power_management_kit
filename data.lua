@@ -13,7 +13,7 @@ trafopipecoverspictures = function()
       layers =
       {
         {
-          filename = "__Transformers__/graphics/transparent32.png",
+          filename = "__power_management_kit__/graphics/transparent32.png",
           priority = "extra-high",
           width = 32,
           height = 32,
@@ -25,7 +25,7 @@ trafopipecoverspictures = function()
       layers =
       {
         {
-          filename = "__Transformers__/graphics/transparent32.png",
+          filename = "__power_management_kit__/graphics/transparent32.png",
           priority = "extra-high",
           width = 32,
           height = 32,
@@ -37,7 +37,7 @@ trafopipecoverspictures = function()
       layers =
       {
         {
-          filename = "__Transformers__/graphics/transparent32.png",
+          filename = "__power_management_kit__/graphics/transparent32.png",
           priority = "extra-high",
           width = 32,
           height = 32,
@@ -49,7 +49,7 @@ trafopipecoverspictures = function()
       layers =
       {
         {
-          filename = "__Transformers__/graphics/transparent32.png",
+          filename = "__power_management_kit__/graphics/transparent32.png",
           priority = "extra-high",
           width = 32,
           height = 32,
@@ -62,7 +62,7 @@ end
 
 transparent_pic =
 {
-    filename = "__Transformers__/graphics/transparent.png",
+    filename = "__power_management_kit__/graphics/transparent.png",
     priority = "extra-high",
     width = 1,
     height = 1,
@@ -70,7 +70,7 @@ transparent_pic =
 }
 con_pictures =
 {
-  filename = "__Transformers__/graphics/transparent.png",
+  filename = "__power_management_kit__/graphics/transparent.png",
   priority = "high",
   width = 1,
   height = 1,
@@ -225,7 +225,7 @@ for i=1, 5 do
 		{
 		type = "item",
 		name = "traformator-"..i,
-		icon = "__Transformers__/graphics/icons/trafoicon.png",
+		icon = "__power_management_kit__/graphics/icons/trafoicon.png",
 		--flags = {"goes-to-quickbar"},
 		subgroup = "extraction-machine",
 		order = "c1",
@@ -242,7 +242,7 @@ for i=1, 5 do
 		{
 		type = "item",
 		name = "traformator-"..i,
-		icon = "__Transformers__/graphics/icons/trafoicon.png",
+		icon = "__power_management_kit__/graphics/icons/trafoicon.png",
 		--flags = {"goes-to-quickbar"},
 		subgroup = "extraction-machine",
 		order = "c1",
@@ -254,7 +254,7 @@ for i=1, 5 do
 		{
 			type = "boiler",
 			name = "traformator-"..i.."-placer",
-			icon = "__Transformers__/graphics/icons/trafoicon.png",
+			icon = "__power_management_kit__/graphics/icons/trafoicon.png",
 			flags = {"placeable-neutral","player-creation"},
 			minable = {mining_time = 1, result = "traformator-"..i},
 			max_health = 300,
@@ -308,7 +308,7 @@ for i=1, 5 do
 			fire_glow ={},
 			structure = {
 				north = {
-					filename = "__Transformers__/graphics/transformer/trafosprites-placer.png",
+					filename = "__power_management_kit__/graphics/transformer/trafosprites-placer.png",
 					x = 233,
 					width = 233,
 					height = 155,
@@ -316,14 +316,14 @@ for i=1, 5 do
 					shift = {2.6, -0.45}
 				},
 				east = {
-					filename = "__Transformers__/graphics/transformer/trafosprites-placer.png",
+					filename = "__power_management_kit__/graphics/transformer/trafosprites-placer.png",
 					width = 233,
 					height = 155,
 					frame_count = 1,
 					shift = {1.5, -1.15}
 				},
 				south = {
-					filename = "__Transformers__/graphics/transformer/trafosprites-placer.png",
+					filename = "__power_management_kit__/graphics/transformer/trafosprites-placer.png",
 					x = 699,
 					width = 233,
 					height = 155,
@@ -331,7 +331,7 @@ for i=1, 5 do
 					shift = {2.6, -0.45}
 				},
 				west = {
-					filename = "__Transformers__/graphics/transformer/trafosprites-placer.png",
+					filename = "__power_management_kit__/graphics/transformer/trafosprites-placer.png",
 					x = 466,
 					width = 233,
 					height = 155,
@@ -344,7 +344,7 @@ for i=1, 5 do
 		{
 			type = "boiler",
 			name = "traformator-"..i,
-			icon = "__Transformers__/graphics/icons/trafoicon.png",
+			icon = "__power_management_kit__/graphics/icons/trafoicon.png",
 			flags = {"placeable-neutral","player-creation"},
 			minable = {mining_time = 1, result = "traformator-"..i},
 			max_health = 300,
@@ -399,7 +399,7 @@ for i=1, 5 do
 			fire_glow ={},
 			structure = {
 				north = {
-					filename = "__Transformers__/graphics/transformer/trafosprites.png",
+					filename = "__power_management_kit__/graphics/transformer/trafosprites.png",
 					x = 233,
 					width = 233,
 					height = 155,
@@ -407,14 +407,14 @@ for i=1, 5 do
 					shift = {2.6, -0.45}
 				},
 				east = {
-					filename = "__Transformers__/graphics/transformer/trafosprites.png",
+					filename = "__power_management_kit__/graphics/transformer/trafosprites.png",
 					width = 233,
 					height = 155,
 					frame_count = 1,
 					shift = {1.5, -1.15}
 				},
 				south = {
-					filename = "__Transformers__/graphics/transformer/trafosprites.png",
+					filename = "__power_management_kit__/graphics/transformer/trafosprites.png",
 					x = 699,
 					width = 233,
 					height = 155,
@@ -422,7 +422,7 @@ for i=1, 5 do
 					shift = {2.6, -0.45}
 				},
 				west = {
-					filename = "__Transformers__/graphics/transformer/trafosprites.png",
+					filename = "__power_management_kit__/graphics/transformer/trafosprites.png",
 					x = 466,
 					width = 233,
 					height = 155,
@@ -511,7 +511,7 @@ data:extend(
 		heat_capacity = 200.."J",
 		base_color = {r=0, g=0.34, b=0.6},
 		flow_color = {r=0.7, g=0.7, b=0.7},
-		icon = "__Transformers__/graphics/flash.png",
+		icon = "__power_management_kit__/graphics/flash.png",
 		icon_size = 32,
 		order = "a[fluid]-a[water]",
 		pressure_to_speed_ratio = 0.4,
@@ -525,7 +525,7 @@ data:extend(
 		default_temperature = 15,
 		max_temperature = 500,
 		heat_capacity = 200.."J",
-		icon = "__Transformers__/graphics/flash.png",
+		icon = "__power_management_kit__/graphics/flash.png",
 		icon_size = 32,
 		base_color = {r=0.5, g=0.5, b=0.5},
 		flow_color = {r=1.0, g=1.0, b=1.0},
@@ -539,7 +539,7 @@ data:extend(
 	{
 		type = "boiler",
 		name = "traformator-source",
-		icon = "__Transformers__/graphics/icons/trafoicon.png",
+		icon = "__power_management_kit__/graphics/icons/trafoicon.png",
 		icon_size = 32,
 		order = "z",
 		flags = {"placeable-neutral", "player-creation","not-on-map","not-deconstructable","not-blueprintable", trafos_hide_overlay},
@@ -611,7 +611,7 @@ for i=1, 5 do
 	{
 		type = "generator",
 		name = "traformator-target-"..i.."-sw", --powered from south or west
-		icon = "__Transformers__/graphics/icons/trafoicon.png",
+		icon = "__power_management_kit__/graphics/icons/trafoicon.png",
 		icon_size = 32,
 		order = "z",
 		flags = {"placeable-neutral","player-creation","not-on-map","not-deconstructable","not-blueprintable", trafos_hide_overlay},
@@ -654,7 +654,7 @@ for i=1, 5 do
 		{
 			sound =
 			{
-				filename = "__Transformers__/sound/MainsBrum50Hz.ogg",
+				filename = "__power_management_kit__/sound/MainsBrum50Hz.ogg",
 				volume = 0.5
 			},
 			match_speed_to_activity = true
@@ -665,7 +665,7 @@ for i=1, 5 do
 	{
 		type = "generator",
 		name = "traformator-target-"..i.."-ne", --powered from north or east
-		icon = "__Transformers__/graphics/icons/trafoicon.png",
+		icon = "__power_management_kit__/graphics/icons/trafoicon.png",
 		icon_size = 32,
 		order = "z",
 		flags = {"placeable-neutral","player-creation","not-on-map","not-deconstructable","not-blueprintable", trafos_hide_overlay},
@@ -707,7 +707,7 @@ for i=1, 5 do
 		{
 			sound =
 			{
-				filename = "__Transformers__/sound/MainsBrum50Hz.ogg",
+				filename = "__power_management_kit__/sound/MainsBrum50Hz.ogg",
 				volume = 0.5
 			},
 			match_speed_to_activity = true
