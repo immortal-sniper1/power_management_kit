@@ -2,8 +2,8 @@
 require('recipe')
 
 
-     cha= {5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000, 7500, 10000, 25000, 50000};
-    for xx=1,16,1 do
+     cha= { nil , 5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000, 7500, 10000, 25000, 50000};
+         for xx=1,16,1 do
       
 
 
@@ -53,10 +53,10 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      buffer_capacity = (3+xx*2).."MJ",
+      buffer_capacity = (1+cha[xx+1]/60).."MJ",
       usage_priority = "tertiary",
-      input_flow_limit = (1+cha[xx+1]).."MW",
-      output_flow_limit = (1+cha[xx+1]).."MW"
+      input_flow_limit = (cha[xx+1]).."MW",
+      output_flow_limit = (cha[xx+1]).."MW"
     },
     picture = accumulator_picture(),
     charge_animation = accumulator_charge(),
