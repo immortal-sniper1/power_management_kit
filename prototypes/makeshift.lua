@@ -1,60 +1,52 @@
---require('prototypes.recipe')
-require('recipe')
-
-
-     cha= { nil , 5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000, 7500, 10000, 25000, 50000, 75000, 100000, 250000, 500000};
-         for xx=1,20,1 do
-
-
-data:extend({
-
+if ( mods['pyalienlife'] or  mods['pyhightech']) then
+data:extend(
+{
 
     {
+    type = "recipe",
+    name = "accumulator-msf",
+    energy_required = 30,
+    ingredients =
+    {
+      {"iron-plate", 12},
+      {"copper-plate", 20},
+      {"copper-cable", 15}
+    },
+    result = "accumulator-1"
+  },
+      {
     type = "item",
-    name = "accumulator-"..xx+1,
+    name = "accumulator-msf",
     icon = "__base__/graphics/icons/accumulator.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "energy",
     order = "e[accumulator]-a[accumulator]",
-    place_result = "accumulator-"..xx+1,
+    place_result = "accumulator-msf",
     stack_size = 50
   },
 
-    {
-    type = "recipe",
-    name = "accumulator-"..xx+1,
-    energy_required = 10,
-    ingredients =
-    {
-      {"iron-plate", 2},
-      {"accumulator-"..xx, 2},
-      {"battery", 5}
-    },
-    result = "accumulator-"..xx+1
-  },
 
-
-    {
+      {
     type = "accumulator",
-    name = "accumulator-"..xx+1,
+    name = "accumulator-msf",
     icon = "__base__/graphics/icons/accumulator.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "accumulator-"..xx+1},
-    max_health = 180+80*xx,
+    minable = {mining_time = 0.1, result = "accumulator-msf"},
+    max_health = 200,
     corpse = "accumulator-remnants",
     dying_explosion = "accumulator-explosion",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
-  --  damaged_trigger_effect = hit_effects.entity(),
+   -- damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-1, -1.5}, {1, 1}},
     energy_source =
     {
       type = "electric",
-      buffer_capacity = (1+cha[xx+1]/60).."MJ",
+      buffer_capacity = "0.85MJ",
       usage_priority = "tertiary",
-      input_flow_limit = (cha[xx+1]).."MW",
-      output_flow_limit = (cha[xx+1]).."MW"
+      input_flow_limit = "50MW",
+      output_flow_limit = "50MW"
     },
     picture = accumulator_picture(),
     charge_animation = accumulator_charge(),
@@ -65,7 +57,7 @@ data:extend({
     discharge_animation = accumulator_discharge(),
     discharge_cooldown = 60,
     discharge_light = {intensity = 0.7, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
- --   vehicle_impact_sound = sounds.generic_impact,
+  --  vehicle_impact_sound = sounds.generic_impact,
     working_sound =
     {
       sound =
@@ -90,7 +82,5 @@ data:extend({
 
     default_output_signal = {type = "virtual", name = "signal-A"}
   },
-
-
 })
-    end
+end
